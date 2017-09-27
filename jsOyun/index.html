@@ -1,0 +1,41 @@
+
+<html>
+<title>JS Oyun</title>
+<script src="game.js"></script>
+<style>
+* {margin:0px; padding:0px;}
+body {font-family:"Open Sans", sans-serif;}
+
+#title { margin-left: 100px; }
+#game { width:408px; padding:30px;}
+#game div {width:200px; height:200px; float:left; border:2px solid #fff;}
+
+.red {background:#E26464; }
+.blue {background:#66ADE3; }
+.yellow {background:#E2DE64; }
+.green {background:#86E264; }
+
+#point { font-size:20px; font-weight: bold;margin-top: 20px; }
+
+
+</style>
+<body onLoad="startGame()">
+
+<div id="title">
+	<h1> Match Colors Game </h1>
+</div>
+
+<div id="game">
+
+	<div id="cell1" onclick="control(1)" class="red"></div>
+	<div id="cell2" onclick="control(2)" class="blue"></div>
+	<div id="cell3" onclick="control(3)" class="yellow"></div>
+	<div id="cell4" onclick="control(4)" class="green"></div>
+	
+	<div id="point">0 Points
+	<p id="countdown"> 
+	</div>
+	
+</div>
+</body>
+</html>
